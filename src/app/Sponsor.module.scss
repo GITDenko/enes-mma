@@ -1,0 +1,40 @@
+.sponsors {
+    margin: 0 24px;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    display: grid;
+
+    @media screen and (max-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        > * {
+        flex-basis: 50%;
+        };
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+
+        > *:after {
+            content: "";
+            display: block;
+            width: calc(100vw - 48px);
+            height: 1px;
+            background-color: #fff;
+            margin-top: 20px;
+        }
+    }
+}
+
+.wrapper {
+    text-align: center;
+    margin: 100px auto;
+    max-width: 1200px;
+    font-size: 22px;
+
+    @media screen and (max-width: 600px) {
+        margin: 60px auto;
+    }
+}

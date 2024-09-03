@@ -1,0 +1,39 @@
+.image {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    pointer-events: none;
+    user-select: none;
+    object-fit: cover;
+
+    @media screen and (max-width: 600px) {
+        opacity: 0.4;
+    }
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.overlay {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+}
+
+.name {
+    font-size: 80px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.titles {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+}

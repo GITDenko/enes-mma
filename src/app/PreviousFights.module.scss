@@ -1,0 +1,63 @@
+.fight-card {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+
+    img {
+        transition: transform 0.3s ease;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.wrapper {
+    display: flex;
+    row-gap: 60px;
+    max-width: 700px;
+    margin: 120px auto;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: 80px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.fight-card-hover {
+    position: fixed;
+    max-width: 80vw;
+    min-width: 800px;
+    margin: 0 auto;
+    height: 80vh;
+    top: 10vh;
+    border-radius: 50px;
+    background-color: #000;
+
+    display: flex;
+
+    h3 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+.enes {
+    flex-basis: 50%;
+}
+
+.opponent {
+    flex-basis: 50%;
+}
